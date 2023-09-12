@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Учим таблицу умножения с папой</string>
+    <string name="one_ch">ONE</string>
+    <string name="two_ch">TWO</string>
+    <string name="result">Результат</string>
+    <string name="reload">Перезагрузка</string>
+    <string name="result_inf">вычислить</string>
+
+    <string name="info1">проверь себя</string>
+    <string name="info2">подсмотри варианты</string>
+    <string name="info3">вычисли</string>
+    <string name="variants">Варианты</string>
+</resources>

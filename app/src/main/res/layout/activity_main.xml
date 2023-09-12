@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <TextView
+            android:id="@+id/textX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="X"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="@+id/infoTx"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/infoTx"
+            app:layout_constraintTop_toBottomOf="@+id/infoTx"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btTx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="@string/result_inf"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btVar"
+            app:layout_constraintEnd_toEndOf="@+id/btReload"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btReload" />
+
+        <TextView
+            android:id="@+id/infoTx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:background="#44FF00"
+            android:fontFamily="@font/alef_bold"
+            android:freezesText="false"
+            android:gravity="center"
+            android:text="@string/info1"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/infoTx2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/infoTx2"
+            app:layout_constraintTop_toBottomOf="@+id/infoTx2" />
+
+        <TextView
+            android:id="@+id/infoTx2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:background="#44FF00"
+            android:freezesText="false"
+            android:gravity="center"
+            android:text="@string/info2"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/infoTx"
+            app:layout_constraintEnd_toEndOf="@+id/infoTx3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/infoTx3"
+            app:layout_constraintTop_toBottomOf="@+id/infoTx3" />
+
+        <TextView
+            android:id="@+id/infoTx3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autoText="false"
+            android:background="#44FF00"
+            android:fontFamily="@font/alef_bold"
+            android:freezesText="false"
+            android:gravity="center"
+            android:text="@string/info3"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/twoTx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/two_ch"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textX"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textX"
+            app:layout_constraintTop_toTopOf="@+id/textX"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/resultTx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#44FF00"
+            android:elegantTextHeight="true"
+            android:gravity="center"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="60sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/btTx"
+            app:layout_constraintEnd_toEndOf="@+id/btVar"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/btVar" />
+
+        <Button
+            android:id="@+id/btReload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="@string/reload"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btVar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="@string/variants"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btReload"
+            app:layout_constraintEnd_toEndOf="@+id/btReload"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btReload" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="408dp"
+            android:layout_height="151dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/textInfoResult"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textX">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/salute_Sw"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/salute"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/oneTx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/one_ch"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textX"
+            app:layout_constraintEnd_toStartOf="@+id/textX"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textX"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textInfoResult"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/result"
+            android:textAllCaps="true"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/resultTx"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
